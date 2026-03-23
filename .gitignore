@@ -31,8 +31,8 @@ dcs_lookup/client/node_modules/
 dcs_lookup/client/dist/
 dcs_lookup/client/build/
 
-# PyInstaller
-*.spec
+# PyInstaller build artifacts (keep *.spec files — they are source)
+build/
 
 # Logs
 *.log
