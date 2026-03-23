@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+pydantic
+nltk
+customtkinter
+requests
+openpyxl
+python-dotenv
+pandas
