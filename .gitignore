@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# IDE
+.idea/
+
+# Database
+*.db
+
+# Claude AI
+.claude/
+
+# Node.js (client)
+dcs_lookup/client/node_modules/
+dcs_lookup/client/dist/
+dcs_lookup/client/build/
+
+# PyInstaller
+*.spec
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
