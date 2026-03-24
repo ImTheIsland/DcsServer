@@ -114,10 +114,11 @@ class KeywordEditDialog(ctk.CTkToplevel):
     def __init__(self, parent, dcs_code: str, d: str, c: str | None, s: str | None,
                  type_val: str | None, desc_val: str | None):
         super().__init__(parent)
+        self.withdraw()
         self.title(f"Keywords — {dcs_code}")
         w, h = 400, 500
         px = parent.winfo_x() + (parent.winfo_width() - w) // 2
-        py = parent.winfo_y() - h - 8
+        py = parent.winfo_y() + (parent.winfo_height() - h) // 2
         self.geometry(f"{w}x{h}+{px}+{py}")
         self.resizable(False, False)
         self.transient(parent)
@@ -139,6 +140,7 @@ class KeywordEditDialog(ctk.CTkToplevel):
         self._pending: list[str] = []
 
         self._build_ui()
+        self.deiconify()
         self._reload_keywords()
 
     # -------------------------------------------------------------------

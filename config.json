@@ -4,5 +4,5 @@
   "weight_user": 3.0,
   "weight_vendor_affinity": 2.0,
   "custom_stop_words": ["black"],
-  "server_url": "http://192.168.1.178:4328"
+  "server_url": "http://192.168.1.25:4328"
 }
