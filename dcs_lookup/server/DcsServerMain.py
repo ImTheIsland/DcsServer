@@ -3,9 +3,9 @@ from pathlib import Path
 
 from fastapi import FastAPI
 
-from ..db.database import engine
-from ..db.models import Base
-from .routers import dcs, keywords, vendors
+
+from dcs_lookup.server.routers import dcs, keywords, vendors
+from dcs_lookup.db.database import Base, engine
 
 _CONFIG_PATH = Path(__file__).parent.parent.parent / "config.json"
 
